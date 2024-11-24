@@ -1,0 +1,153 @@
+* {
+  /*ATENÇÃO: ESSE CÓDIGO JÁ ESTÁ COM A RESPONSIVIDADE, POR FAVOR, NÃO ALTERAR!!!*/
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.container {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #c0a6e1;
+  width: 240px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 220px;
+  margin-bottom: 40px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+nav a {
+  background-color: #551f85;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  transform: translateY(40%);
+}
+
+.main-content {
+  background-color: white;
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prateleiras {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  justify-content: space-between;
+  gap: 100px;
+  height: 380px;
+  transform: translateY(20%);
+}
+
+.prateleira {
+  background-color: #5d3c7b;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+}
+
+.prateleira h3 {
+  margin-bottom: 15px;
+}
+
+.prateleira p {
+  margin-bottom: 10px;
+}
+
+.btn-alterar {
+  align-self: center;
+  background-color: #551f85;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.alterar-estoque {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.estoque-box {
+  position: absolute;
+  top: -70px;
+  background-color: #c0a6e1;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.estoque-box input {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .prateleiras {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
